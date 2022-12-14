@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0DA4D49-EA34-4BE1-AEFB-576A772DAA3B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PlaformaEstudiantil.My.MyApplication</StartupObject>
+    <RootNamespace>PlaformaEstudiantil</RootNamespace>
+    <AssemblyName>PlaformaEstudiantil</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PlaformaEstudiantil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PlaformaEstudiantil.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admi_alumnos.Designer.vb">
+      <DependentUpon>admi_alumnos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admi_alumnos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admi_aspirantes.Designer.vb">
+      <DependentUpon>admi_aspirantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admi_aspirantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admi_maestros.Designer.vb">
+      <DependentUpon>admi_maestros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admi_maestros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseDeDatos.vb" />
+    <Compile Include="Boleta.Designer.vb">
+      <DependentUpon>Boleta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Boleta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="captura_calif.Designer.vb">
+      <DependentUpon>captura_calif.vb</DependentUpon>
+    </Compile>
+    <Compile Include="captura_calif.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="ConexionLogin.vb" />
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_estudiante.Designer.vb">
+      <DependentUpon>login_estudiante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login_estudiante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_aspirantes.Designer.vb">
+      <DependentUpon>login_aspirantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login_aspirantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_maestros.Designer.vb">
+      <DependentUpon>login_maestros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login_maestros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materias_maestro.Designer.vb">
+      <DependentUpon>Materias_maestro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Materias_maestro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_admi.Designer.vb">
+      <DependentUpon>menu_admi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menu_admi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_aspirante.Designer.vb">
+      <DependentUpon>Menu_aspirante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_aspirante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_estudiante.Designer.vb">
+      <DependentUpon>Menu_estudiante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_estudiante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu_maestros.Designer.vb">
+      <DependentUpon>Menu_maestros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu_maestros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PlataformaDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlataformaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PlataformaDataSetAsp.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlataformaDataSetAsp.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="registro_aspirantes.Designer.vb">
+      <DependentUpon>registro_aspirantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registro_aspirantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registro_estudiantes.Designer.vb">
+      <DependentUpon>registro_estudiantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registro_estudiantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registro_maestros.Designer.vb">
+      <DependentUpon>registro_maestros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registro_maestros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="admi_alumnos.resx">
+      <DependentUpon>admi_alumnos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admi_aspirantes.resx">
+      <DependentUpon>admi_aspirantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admi_maestros.resx">
+      <DependentUpon>admi_maestros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Boleta.resx">
+      <DependentUpon>Boleta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="captura_calif.resx">
+      <DependentUpon>captura_calif.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_estudiante.resx">
+      <DependentUpon>login_estudiante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_aspirantes.resx">
+      <DependentUpon>login_aspirantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_maestros.resx">
+      <DependentUpon>login_maestros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materias_maestro.resx">
+      <DependentUpon>Materias_maestro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_admi.resx">
+      <DependentUpon>menu_admi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_aspirante.resx">
+      <DependentUpon>Menu_aspirante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_estudiante.resx">
+      <DependentUpon>Menu_estudiante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu_maestros.resx">
+      <DependentUpon>Menu_maestros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registro_aspirantes.resx">
+      <DependentUpon>registro_aspirantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registro_estudiantes.resx">
+      <DependentUpon>registro_estudiantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registro_maestros.resx">
+      <DependentUpon>registro_maestros.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PlataformaDataSet.xsc">
+      <DependentUpon>PlataformaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PlataformaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlataformaDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PlataformaDataSet.xss">
+      <DependentUpon>PlataformaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PlataformaDataSetAsp.xsc">
+      <DependentUpon>PlataformaDataSetAsp.xsd</DependentUpon>
+    </None>
+    <None Include="PlataformaDataSetAsp.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PlataformaDataSetAsp.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PlataformaDataSetAsp.xss">
+      <DependentUpon>PlataformaDataSetAsp.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\WhatsApp Image 2022-09-09 at 9.32.12 AM.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Ceduk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo_Cbtis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2018-why-chevrolet-08-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fb701f7e475d00d5038f9b904875ca40-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoMakr_2Fs8pJ-300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Opciones-removebg-preview.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

@@ -1,0 +1,6 @@
+﻿Public Class registro_estudiantes
+
+    Private Sub registro_estudiantes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class
